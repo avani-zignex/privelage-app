@@ -1,0 +1,12 @@
+div {
+  display: flex;
+}
+
+app-sidebar {
+  flex: 0 0 auto; /* Sidebar takes up its content size, doesn't grow or shrink */
+  width: 200px; /* Adjust the width as needed */
+}
+
+app-screen {
+  flex: 1; /* Screen takes up the remaining space */
+}

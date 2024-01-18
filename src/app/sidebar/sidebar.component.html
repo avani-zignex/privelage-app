@@ -1,0 +1,25 @@
+<div class="sidebar-container">
+  <div class="sidebar">
+    <h3>
+      User Management
+    </h3>
+    <div>
+      <wj-combo-box class="wj-control" [itemsSource]="app_names"
+              [isEditable]="false">
+      </wj-combo-box>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+    <ul>
+      <li routerLink="screen" routerLinkActive="active">Screen</li>
+      <li routerLink="grid" routerLinkActive="active">Grid</li>
+      <li routerLink="combo" routerLinkActive="active">Combo</li>
+      <!-- Add more links for other sections -->
+    </ul>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
