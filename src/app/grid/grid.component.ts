@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./grid.component.scss']
 })
 export class GridComponent {
-
+  // accordian options
+  showIcons = true;
+  autoSwitch = true;
+  isAnimated = true;
+  allowCollapseAll = true;
+  allowExpandMany = true;
 }

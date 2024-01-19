@@ -11,6 +11,7 @@ export class SidebarComponent {
     'Territory Designer',
     'Route Planner',
     'Disposal Strategy',
-    'Route Execution']
+    'Route Execution'];
+
 }
 

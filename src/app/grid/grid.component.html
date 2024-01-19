@@ -1,1 +1,126 @@
-<p>grid works!</p>
+<div class="container-fluid">
+  <wj-accordion
+          [showIcons]="showIcons"
+          [autoSwitch]="autoSwitch"
+          [isAnimated]="isAnimated"
+          [allowCollapseAll]="allowCollapseAll"
+          [allowExpandMany]="allowExpandMany"
+  >
+
+      <wj-accordion-pane> <!-- pane -->
+          <div> <!-- header -->
+              Sidebar
+              <div class="desc">
+                  Sidebar, DOW, Facilities
+              </div>
+          </div>
+          <div> <!-- content -->
+              <div class="wj-labeled-input switch">
+                  <input id="wifi" type="checkbox" checked />
+                  <label for="wifi">
+                      Sidebar <span>grant or revoke sidebar permission</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="apmode" type="checkbox" />
+                  <label for="apmode">
+                      DOW <span>grant or revoke DOW permission</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="hotspot" type="checkbox" />
+                  <label for="hotspot">
+                      Facilities <span>grant or revoke facilities permission</span>
+                  </label>
+              </div>
+          </div>
+      </wj-accordion-pane>
+
+      <wj-accordion-pane> <!-- pane -->
+          <div> <!-- header -->
+              Grid View
+              <div class="desc">
+                  Loads, Export, Customer
+              </div>
+          </div>
+          <div> <!-- content -->
+              <div class="wj-labeled-input switch">
+                  <input id="dev1" type="checkbox" />
+                  <label for="dev1">
+                      Loads <span>grant or revoke loads permission</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="dev2" type="checkbox" />
+                  <label for="dev2">
+                      Export <span>grant or revoke export permission</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="dev3" type="checkbox" />
+                  <label for="dev3">
+                      Customer <span>grant or revoke customer permission</span>
+                  </label>
+              </div>
+          </div>
+      </wj-accordion-pane>
+
+      <wj-accordion-pane> <!-- pane -->
+          <div> <!-- header -->
+              Vertical Bar
+              <div class="desc">
+                  Insert, Zoom to zip, Zoom to lat lon
+              </div>
+          </div>
+          <div> <!-- content -->
+              <div class="wj-labeled-input switch">
+                  <input id="app-chrome" type="checkbox" />
+                  <label for="app-chrome">
+                      Insert <span>grant or revoke insert permission</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="app-outlook" type="checkbox" />
+                  <label for="app-outlook">
+                      Zoom to zip <span>grant or revoke zoom to zip permission</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="app-fb" type="checkbox" />
+                  <label for="app-fb">
+                      Zoom to lat lon <span>grant or revoke zoom to lat lon permission</span>
+                  </label>
+              </div>
+          </div>
+      </wj-accordion-pane>
+
+      <wj-accordion-pane> <!-- pane -->
+          <div> <!-- header -->
+              Horizontal Bar
+              <div class="desc">
+                  Trace, Resize, Calculate
+              </div>
+          </div>
+          <div> <!-- content -->
+              <div class="wj-labeled-input switch">
+                  <input id="bat-sav" type="checkbox" />
+                  <label for="bat-sav">
+                      Trace <span>grant or revoke trace permission</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="bat-adapt" type="checkbox" />
+                  <label for="bat-adapt">
+                      Resize <span>grant or revoke resize permissiony</span>
+                  </label>
+              </div>
+              <div class="wj-labeled-input switch">
+                  <input id="bat-pct" type="checkbox" />
+                  <label for="bat-pct">
+                      Calculate <span>grant or revoke calculate permission</span>
+                  </label>
+              </div>
+          </div>
+      </wj-accordion-pane>
+  </wj-accordion>
+</div>

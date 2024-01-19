@@ -7,5 +7,6 @@ import { Component} from '@angular/core';
 
 })
 export class ScreenComponent{
+  comboString: string[] = ["Sidebar", "Grid View", "Vertical bar", "Horizontal bar"];
 
 }

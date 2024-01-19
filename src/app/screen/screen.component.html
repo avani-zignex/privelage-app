@@ -1,1 +1,32 @@
 <p>screen works!</p>
+<div>
+  <div>ComboBox</div>
+  <wj-combo-box #theComboString
+    id="theComboString"
+    [itemsSource]="comboString">
+  </wj-combo-box>
+  <div>
+    Checkboxes, Radio Buttons, and Switches
+  </div>
+  <div class="wj-labeled-input">
+      <input id="theCheckboxForm" type="checkbox" checked />
+      <label for="theCheckboxForm">Checkbox</label>
+  </div>
+  <div class="wj-labeled-input switch">
+      <input id="theSwitchForm" type="checkbox" />
+      <label for="theSwitchForm">Switch</label>
+  </div>
+  <br/>
+  <div class="wj-labeled-input">
+      <input id="btnRed" type="radio" name="color" checked />
+      <label for="btnRed">Red</label>
+  </div>
+  <div class="wj-labeled-input">
+      <input id="btnGreen" type="radio" name="color" />
+      <label for="btnGreen">Green</label>
+  </div>
+  <div class="wj-labeled-input">
+      <input id="btnBlue" type="radio" name="color" />
+      <label for="btnBlue">Blue</label>
+  </div>
+</div>

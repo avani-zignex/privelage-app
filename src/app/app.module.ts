@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { WjInputModule } from '@grapecity/wijmo.angular2.input';
+import { WjNavModule } from '@grapecity/wijmo.angular2.nav';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -19,7 +20,8 @@ import { GridComponent } from './grid/grid.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    WjInputModule
+    WjInputModule,
+    WjNavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
