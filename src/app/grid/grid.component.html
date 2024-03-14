@@ -6,15 +6,14 @@
           [allowCollapseAll]="allowCollapseAll"
           [allowExpandMany]="allowExpandMany"
   >
-
-      <wj-accordion-pane> <!-- pane -->
-          <div> <!-- header -->
+      <wj-accordion-pane>
+          <div>
               Sidebar
               <div class="desc">
                   Sidebar, DOW, Facilities
               </div>
           </div>
-          <div> <!-- content -->
+          <div>
               <div class="wj-labeled-input switch">
                   <input id="wifi" type="checkbox" checked />
                   <label for="wifi">
@@ -35,6 +34,43 @@
               </div>
           </div>
       </wj-accordion-pane>
+
+     <!-- <wj-accordion>
+      <div class="toggle-container">
+                <input id="toggleAccordion" type="checkbox" [(ngModel)]="accordionEnabled" />
+                <label for="toggleAccordion">Toggle Accordion</label>
+            </div>
+    <wj-accordion-pane [isDisabled]="!accordionEnabled" >
+        <div>
+            Sidebar
+            <div class="desc">
+                Sidebar, DOW, Facilities
+            </div>
+        </div>
+        <div>
+            <div class="wj-labeled-input switch">
+                <input id="wifi" type="checkbox" checked [disabled]="!accordionEnabled" />
+                <label for="wifi">
+                    Sidebar <span>grant or revoke sidebar permission</span>
+                </label>
+            </div>
+            <div class="wj-labeled-input switch">
+                <input id="apmode" type="checkbox" [disabled]="!accordionEnabled" />
+                <label for="apmode">
+                    DOW <span>grant or revoke DOW permission</span>
+                </label>
+            </div>
+            <div class="wj-labeled-input switch">
+                <input id="hotspot" type="checkbox" [disabled]="!accordionEnabled" />
+                <label for="hotspot">
+                    Facilities <span>grant or revoke facilities permission</span>
+                </label>
+            </div>
+        </div>
+    </wj-accordion-pane>
+</wj-accordion> -->
+
+
 
       <wj-accordion-pane> <!-- pane -->
           <div> <!-- header -->

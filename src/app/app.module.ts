@@ -8,7 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ScreenComponent } from './screen/screen.component';
 import { ComboComponent } from './combo/combo.component';
 import { GridComponent } from './grid/grid.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,8 @@ import { GridComponent } from './grid/grid.component';
     BrowserModule,
     AppRoutingModule,
     WjInputModule,
-    WjNavModule
+    WjNavModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

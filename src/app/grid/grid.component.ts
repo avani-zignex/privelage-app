@@ -12,4 +12,5 @@ export class GridComponent {
   isAnimated = true;
   allowCollapseAll = true;
   allowExpandMany = true;
+  accordionEnabled: boolean = true;
 }
